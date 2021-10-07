@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="container">
+
+    <img src="images/logo.svg" alt="logo" class="logo">
+
+    <div class="calculator-container">
+      <div class="calculator-control">
+        <section class="calculator-screen">
+          <span class="icon-text">Bill <span class="error">Can't be zero</span></span>
+          <input type="number">
+          <span class="icon-photo">$</span>
+        </section>
+        <section class="calculator-btns">
+          <span class="icon-text">Select Tip %</span>
+          <div class="calculator-btns-container">
+            <span>5%</span>
+            <span>10%</span>
+            <span>15%</span>
+            <span> 25%</span>
+            <span>50%</span>
+            <input type="number" placeholder="Custom">
+          </div>
+        </section>
+        <section class="calculator-number-of-people">
+          <span class="icon-text">Number of People <span class="error">Can't be zero</span></span>
+          <input type="number">
+          <img src="images/icon-person.svg" alt="person" class="icon-photo">
+        </section>
+      </div>
+      <div class="calculator-result">
+        <section class="cost">
+          <div class="tip-amount amount"> 
+            <span class="tip icon-text">Tip Amount</span> 
+            <span class="tip-amoutn-result result">$0</span>
+            <span class="person  icon-text"> / person</span>
+          </div>
+          <div class="total amount"> 
+            <span class="tip icon-text">Total</span> 
+            <span class="total-result result">$0</span>
+            <span class="person  icon-text">/ person</span>
+          </div>
+        </section>
+        <section class="reset-btn">Reset</section>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="git@github.com:AbdulrhmanElshahat/Tip-Calculator-App.git">Abdulrhman</a>.
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
