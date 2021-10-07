@@ -44,8 +44,17 @@ inputs[1].oninput = function(){
     }
    
 }
+// functin to reset the calculator
 //REset buttton
-resetBtn.onclick = reset()
+resetBtn.onclick = function reset(){
+    inputs[0].value='';
+    inputs[1].value='';
+    inputs[2].value='';
+    results[0].textContent = '$0'
+    results[1].textContent = '$0'
+    theError[0].style.display=''
+    theError[1].style.display=''
+}
 
 function calculateAll(){
         //Check if the inputs contains corect values
@@ -94,14 +103,4 @@ function mtEle(ele){
 }
 function zeroEle(ele){
     ele.textContent =`Can't be < 1`
-}
-// functin to reset the calculator
-function reset(){
-    inputs[0].value='';
-    inputs[1].value='';
-    inputs[2].value='';
-    results[0].textContent = '$0'
-    results[1].textContent = '$0'
-    theError[0].style.display=''
-    theError[1].style.display=''
 }
